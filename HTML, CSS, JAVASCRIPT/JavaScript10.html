@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript | Events & Listening to events</title>
+    <link rel="stylesheet" href="JavaScript10.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome!</h1>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero maiores debitis non itaque minus ex
+            nobis, corrupti sequi modi unde, animi ipsum facere, cumque doloremque vero quod soluta accusantium nisi
+            eius necessitatibus molestias obcaecati quo. Quos fugit consequuntur sunt quibusdam ducimus quidem eveniet
+            saepe tempore hic magni ullam in, eos laborum quas aliquam, obcaecati quo repellendus doloremque aliquid!
+            Assumenda nihil pariatur ipsum, dicta non est sed nostrum repudiandae? Doloribus doloremque error nostrum
+            natus esse dolores. Excepturi tempora tempore quisquam corrupti nesciunt perspiciatis, recusandae nemo
+            veniam quo assumenda odio. Itaque non sed recusandae esse, adipisci ipsam quod sapiente odit cupiditate
+            doloribus. Quo, enim explicabo autem nam porro cupiditate! Itaque inventore voluptate nemo eaque tenetur
+            eius, earum dignissimos, numquam veritatis nihil libero dolor modi sed esse culpa voluptatum corporis!
+            Recusandae distinctio eius, eligendi eaque ut ducimus commodi fuga optio. Harum maiores, distinctio quasi
+            sint iste eum! Doloribus velit, quos blanditiis culpa deleniti ea illum alias voluptates at quasi rem earum
+            laboriosam exercitationem voluptate dignissimos aperiam odio repellendus facilis reprehenderit vel iure
+            labore quam delectus. Qui cumque tenetur repellendus maiores, saepe, dolor eveniet nulla temporibus iusto
+            consectetur modi explicabo minima, recusandae quos ipsa doloremque ducimus error! Eveniet similique, aperiam
+            fugit repellat maxime cumque aliquam architecto! Commodi asperiores quas quisquam earum, fugiat numquam
+            deleniti fuga omnis laboriosam tenetur atque aliquid? Sit ipsa totam dolore velit tempora consequuntur eius.
+            Illo beatae delectus dolorum quidem, impedit debitis nulla quo.</p>
+    </div>
+
+    <!-- for button -->
+    <button id="btn" onclick="toggleHide()">Show/Hide</button>
+
+    <script>
+        let para = document.getElementById('para');
+        //mouse over
+        para.addEventListener('mouseover', function run() {
+
+            console.log('Mouse inside');
+        })
+
+        //mouse out
+        para.addEventListener('mouseout', function run() {
+
+            console.log('Mouse went outside');
+        })
+
+        //to hide or show para
+        function toggleHide() {
+            let para = document.getElementById('para');
+
+            if (para.style.display != 'none') {
+                para.style.display = 'none';
+            } else {
+                para.style.display = 'block';
+            }
+        }
+    </script>
+
+</body>
+
+</html>

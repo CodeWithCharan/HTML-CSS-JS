@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript | Date and time</title>
+</head>
+
+<body>
+    <h1>Date and time</h1>
+
+    <div class="container">
+        <span id="time"> </span>
+    </div>
+
+    <style>
+        body{
+            background-color: rgb(231, 27, 231);
+        }
+        /* adding css to the clock */
+        .container{
+            font-size: 20px;
+            background-color: red;
+            border: 3px solid black;
+            padding: 34px;
+            margin: 4px;
+            text-align: center;
+        }
+        #time{
+            font-weight: bold;
+        }
+    </style>
+
+    <script>
+        //to print date and time in console
+        let now = new Date();
+        console.log(now);
+
+        //to initialize date whenever we want
+        let sDate = new Date("2023-10-07");
+        console.log(sDate);
+
+        //to initialize date and time whenever we want
+
+        //let sDate2 = new Date(Year,month,date,hours,minutes,seconds,milliseconds);
+        let sDate2 = new Date(2029, 10, 7, 5, 9, 3, 34);
+        console.log(sDate2);
+
+        //to print date and time in screen
+        function currentTime() {
+
+            time.innerHTML = new Date();
+        }
+        setInterval(currentTime, 1000)
+    </script>
+</body>
+
+</html>

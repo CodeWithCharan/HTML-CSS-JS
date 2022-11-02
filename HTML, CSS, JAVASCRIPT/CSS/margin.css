@@ -1,0 +1,17 @@
+/* margin is for outer size */
+.margin{
+    border: solid black 2px;
+    background-color: rgb(147, 181, 216);
+
+    /* margin-top: 84px ;
+    margin-left: 200px ;
+    margin-right: 200px ;
+        (OR)
+    margin: 84px 200px 0 200px;
+        top right bottom left
+        (OR) */
+    margin: auto;
+    width: 50%;
+    height: 500px;
+
+}

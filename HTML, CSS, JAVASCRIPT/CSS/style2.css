@@ -1,0 +1,13 @@
+.nav{
+    /* rgb (red, green, blue) */
+    color: rgb(38, 2, 2);
+    background: rgb(198, 240, 11);
+}
+
+.items{
+    background: rgb(248, 105, 105);
+}
+
+.item{
+    background: rgb(242, 45, 242);
+}

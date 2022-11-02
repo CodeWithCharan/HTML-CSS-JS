@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript | Strings</title>
+</head>
+
+<body>
+    <h1>MARVEL</h1>
+
+    <div id="contant"></div>
+
+    <p>The Marvel Cinematic Universe (MCU) is an American media franchise and shared universe centered on a series of
+        superhero films produced by Marvel Studios. The films are based on characters that appear in American comic
+        books published by Marvel Comics. The franchise also includes television series, short films, digital series,
+        and literature. The shared universe, much like the original Marvel Universe in comic books, was established by
+        crossing over common plot elements, settings, cast, and characters.</p>
+
+    <script>
+        // for doublecots("")
+        var string = "'AI' is called Artificial intellengence";
+        // for doublecots('')
+        var string2 = '"AI" is called Artificial intellengence';
+
+        console.log(string);
+        console.log(string2);
+
+        // normal strings
+        var name = 'charan';
+        var course = 'AI & ML';
+
+        var sentence = ("My name is " + name + " and im studying in " + course);
+
+        console.log(sentence);
+
+        // template literals string. Syntax(``)
+        var name2 = 'charan';
+        var course2 = 'AI & ML';
+
+        var temp = (`My "name" is ${name2} and im 'studying' in ${course2}`);
+
+        console.log(temp);
+
+        // for length
+        var len = name.length;
+        console.log(`The length of the name is ${len}`);
+        // for new line
+        console.log("Hello\nWorld");
+
+        // for inserting Elements in inner HTML
+        document.getElementById("contant").innerHTML = '<h3>MARVEL CINIMATIC UNIVERSE</h3>';
+    </script>
+</body>
+
+</html>

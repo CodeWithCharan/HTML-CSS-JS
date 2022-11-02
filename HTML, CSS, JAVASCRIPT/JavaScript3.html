@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript | String Functions</title>
+</head>
+
+<body>
+
+    <script>
+        var str = "This is a string";
+        console.log(str);
+
+        // First occurence of a substring
+        var position = str.indexOf('is');
+        console.log(position)
+
+        // Last occurence of a substring
+        position = str.lastIndexOf('is');
+        console.log(position)
+
+        // Substring from a string
+        // var substr = str.slice(1,7);
+        // Or
+        // var substr = str.substring(1,7);
+        //Or
+        var substr1 = str.substr(1, 7);
+        console.log(substr1)
+
+        //Replacing
+        var replaced = str.replace('string', 'Charan');
+        console.log(str)
+        console.log(replaced)
+
+
+        var newString = replaced.concat(' Website');
+        console.log(newString)
+
+        //for UpperCase
+        console.log(str.toUpperCase());
+
+        //for LowerCase
+        console.log(str.toLowerCase());
+
+        //Trim
+        var strWithWhitespaces = "   this contains        whitespaces   ";
+
+        console.log(strWithWhitespaces)
+        console.log(strWithWhitespaces.trim())
+
+        //from index value
+
+        console.log(str[3])
+
+    </script>
+</body>
+
+</html>

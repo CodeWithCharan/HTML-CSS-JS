@@ -1,0 +1,14 @@
+/* padding is for inner size */
+.padding{
+    border: solid black 2px;
+    background-color: rgb(10, 240, 129);
+
+    margin: auto;
+    width: 50%;
+    height: 500px;
+
+    padding-top: 100px;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-bottom: 100px;
+}

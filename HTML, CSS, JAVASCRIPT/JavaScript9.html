@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript | DOM Manipulation </title>
+</head>
+<body>
+    <div id="main" class="container">   
+        <ul id="nav">
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact us</li>
+        </ul>
+    </div>
+    <div class="container">
+        this is a div with same class name
+    </div>
+
+    <script>
+        let main1 = document.getElementById('main');
+        console.log(main1);
+
+        let nav1 = document.getElementById('nav');
+        console.log(nav1);
+
+        //calling div with class name
+        let container1 = document.getElementsByClassName('container');
+        console.log(container1);
+
+        //It will return 1st simalar elements
+        let sel = document.querySelector('#nav>li');
+        console.log("1st similar name Element return ",sel);
+        
+        //It will return All simalar elements
+        let sel2 = document.querySelectorAll('#nav>li');
+        console.log("All similar name Elements return ",sel2);
+    </script>
+</body>
+</html>
